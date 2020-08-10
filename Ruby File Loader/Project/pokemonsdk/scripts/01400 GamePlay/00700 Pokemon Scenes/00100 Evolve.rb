@@ -21,6 +21,7 @@ module GamePlay
     # @param forced [Boolean] if the evolution can be stopped or not
     def initialize(pokemon, id, form = nil, forced = false)
       super()
+      @special_evolution_item = (pokemon.data.special_evolution || []).map { |hash| hash[:item_hold] || 0 }
       @pokemon = pokemon
       @clone = pokemon.clone
       @clone.id = id
@@ -52,6 +53,10 @@ module GamePlay
         @pokemon.check_skill_and_learn
         # Evovolution skill learn
         @pokemon.check_skill_and_learn(false, 0)
+        # Remove item
+        if @special_evolution_item.include?(@pokemon.item_holding) || @special_evolution_item.include?(@pokemon.item_db_symbol)
+          @pokemon.item_holding = 0
+        end
         restore_audio
         @running = false
         @evolved = true

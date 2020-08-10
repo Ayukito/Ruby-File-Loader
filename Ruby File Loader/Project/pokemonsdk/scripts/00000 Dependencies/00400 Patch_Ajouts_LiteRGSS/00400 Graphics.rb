@@ -160,7 +160,7 @@ module Graphics
   end
 
   def detect_gl_version
-    return if PARGV[:"ignore-gpu-issue"]
+    return if PARGV[:"ignore-gpu-issue"] || PSDK_RUNNING_UNDER_MAC
 
     version = openGL_version.join('.')
     if version < '3.1'

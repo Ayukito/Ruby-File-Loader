@@ -1,26 +1,21 @@
 ================================Erreur de script================================
 Message :
-SIGHUP
+No such file or directory @ rb_sysopen - graphics/shaders/yuki_transition_circular.txt
 
-Type : SignalException
-Script : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00401 Graphics_framerate.rb (PSDK)
-Ligne : 105
-Date : 09/08/2020 18:36:19
+Type : Errno::ENOENT
+Script : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/01200 Shader.rb (PSDK)
+Ligne : 82
+Date : 10/08/2020 18:04:59
 Game Version : 256
 Logiciel : Pokémon SDK 24.84
 ===================================Backtraces===================================
-[21] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00401 Graphics_framerate.rb (PSDK) | ligne 105 initialize
-[20] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00401 Graphics_framerate.rb (PSDK) | ligne 105 initialize
-[19] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00401 Graphics_framerate.rb (PSDK) | ligne 105 exception
-[18] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00401 Graphics_framerate.rb (PSDK) | ligne 105 update
-[17] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00401 Graphics_framerate.rb (PSDK) | ligne 105 call
-[16] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00401 Graphics_framerate.rb (PSDK) | ligne 105 update_manage
-[15] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00400 Graphics.rb (PSDK) | ligne 40 update
-[14] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00400 Graphics.rb (PSDK) | ligne 68 wait
-[13] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00400 Graphics.rb (PSDK) | ligne 67 times
-[12] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00400 Graphics.rb (PSDK) | ligne 67 wait
-[11] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00400 Graphics.rb (PSDK) | ligne 77 freeze
-[10] : tools/GameLoader/Z_main.rb (PSDK) | ligne 14 <top (required)>
+[16] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/01200 Shader.rb (PSDK) | ligne 82 read
+[15] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/01200 Shader.rb (PSDK) | ligne 82 load_shader_file
+[14] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/01200 Shader.rb (PSDK) | ligne 47 register
+[13] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/01200 Shader.rb (PSDK) | ligne 118 <class:Shader>
+[12] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00400 Graphics.rb (PSDK) | ligne 24 each
+[11] : 00000 Dependencies/00400 Patch_Ajouts_LiteRGSS/00400 Graphics.rb (PSDK) | ligne 24 start
+[10] : tools/GameLoader/Z_main.rb (PSDK) | ligne 4 <top (required)>
 [9] : tools/GameLoader/3_load_extensions.rb (PSDK) | ligne 44 rgss_main
 [8] : tools/GameLoader/50_load_game_uncompiled.rb (PSDK) | ligne 32 <top (required)>
 [7] : /usr/local/Cellar/ruby/2.7.1_2/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb (ruby) | ligne 92 require

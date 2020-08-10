@@ -256,5 +256,6 @@ module Yuki
     end
   end
 end
-
-require 'lib/YukiTilemapMapDataBlaster.so' if File.exist?('lib/YukiTilemapMapDataBlaster.so')
+if PSDK_RUNNING_UNDER_WINDOWS
+  require 'lib/YukiTilemapMapDataBlaster.so' if File.exist?('lib/YukiTilemapMapDataBlaster.so')
+end
