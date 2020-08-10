@@ -1,7 +1,8 @@
 This is a loader to run PokemonSDK games.
-Included is builds of:
+Included is MacOS builds of:
 LiteRGSS https://github.com/NuriYuri/LiteRGSS
 RubyFMod https://github.com/NuriYuri/Ruby-Fmod
+The installation of the dependancies for the above will be explained at a later date.
 
 And v0.24.84 of PokemonSDK
 https://gitlab.com/pokemonsdk/pokemonsdk
